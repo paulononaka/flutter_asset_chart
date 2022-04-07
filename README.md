@@ -1,8 +1,13 @@
+[![mailto:paulononaka@email.com](https://img.shields.io/badge/contact-@paulononaka-blue.svg?style=flat)](mailto:paulononaka@email.com)
+[![ci_cd](https://github.com/paulononaka/flutter_asset_chart/actions/workflows/ci_cd.yml/badge.svg)](https://github.com/paulononaka/flutter_asset_chart/actions/workflows/ci_cd.yml)
 # FlutFire
 
 A sample project showing how to create a chart from a Rest API
 
 - Flutter 2.10.3
+
+CI & CD
+- GitHub Actions
 
 State Management
 - Flutter Bloc
@@ -22,6 +27,7 @@ Syntax Suggar
 Extras
 - Fl Chart
 - Flutter Svg
+- Localizely Flutter Intl
 # App
 ### Setup
 
@@ -64,3 +70,8 @@ make build-ios
             ...
          ]
         ```
+
+# Screenshots
+
+![Empty Search](/docs/1.png "Empty Search")
+![Portfolio Tracker](/docs/2.png "Portfolio Tracker")
