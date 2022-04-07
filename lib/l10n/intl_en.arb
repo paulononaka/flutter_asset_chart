@@ -1,0 +1,10 @@
+{
+    "appTitle": "AssetDash Portfolio Tracker",
+    "portfolioHoldings": "Portfolio Holdings",
+    "porfolioChart": "Porfolio Chart",
+    "searchByUserID": "Search by User ID",
+    "searchByUserIDValidation": "User ID should be a number",
+    "errorFetchingPortfolio": "Error fetching portfolio :(",
+    "userNotFound": "User not found",
+    "allHoldings": "All"
+}
