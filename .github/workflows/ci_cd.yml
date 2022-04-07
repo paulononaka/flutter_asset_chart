@@ -54,12 +54,6 @@ jobs:
           channel: "stable"
           cache: true
 
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: ${{ matrix.ruby-version }}
-          working-directory: ios
-
       - name: Pub get
         run: make get
 
@@ -68,6 +62,3 @@ jobs:
 
       - name: Linter
         run: make lint
-
-      - name: Build
-        run: make build-ios

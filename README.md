@@ -29,7 +29,7 @@ Extras
 - Flutter Svg
 - Localizely Flutter Intl
 # App
-### Setup
+### Setup (install dependencies and runs code generation)
 
 ```bash
 make install
