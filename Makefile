@@ -35,3 +35,6 @@ build-android: ## Build the app for Android
 
 build-ios: ## Build the app for iOS
 	flutter build ios -t lib/main.dart
+
+golden: ## Run the golden tests
+	flutter test

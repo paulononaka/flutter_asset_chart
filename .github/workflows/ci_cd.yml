@@ -6,35 +6,35 @@ on:
       - main
 
 jobs:
-  android:
-    timeout-minutes: 20
-    name: Android
-    strategy:
-      matrix:
-        flutter-version: [2.10.3]
-      fail-fast: true
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
+  # android:
+  #   timeout-minutes: 20
+  #   name: Android
+  #   strategy:
+  #     matrix:
+  #       flutter-version: [2.10.3]
+  #     fail-fast: true
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v2
 
-      - name: Setup Flutter
-        uses: subosito/flutter-action@v1
-        with:
-          flutter-version: ${{ matrix.flutter-version }}
-          channel: "stable"
-          cache: true
+  #     - name: Setup Flutter
+  #       uses: subosito/flutter-action@v1
+  #       with:
+  #         flutter-version: ${{ matrix.flutter-version }}
+  #         channel: "stable"
+  #         cache: true
 
-      - name: Pub get
-        run: make get
+  #     - name: Pub get
+  #       run: make get
 
-      - name: Generate code
-        run: make codegen
+  #     - name: Generate code
+  #       run: make codegen
 
-      - name: Linter
-        run: make lint
+  #     - name: Linter
+  #       run: make lint
 
-      - name: Build
-        run: make build-android
+  #     - name: Build
+  #       run: make build-android
 
   ios:
     name: iOS
@@ -62,3 +62,6 @@ jobs:
 
       - name: Linter
         run: make lint
+      
+      - name: Golden tests
+        run: make golden
