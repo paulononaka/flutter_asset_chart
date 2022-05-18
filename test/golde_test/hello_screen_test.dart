@@ -4,8 +4,8 @@ import 'package:golden_toolkit/golden_toolkit.dart';
 
 void main() {
   testGoldens('Portfolio golden test', (WidgetTester tester) async {
-    // final _portfolioRepository = PortfolioRepositoryMock();
-    // final portfolioCubit = PortfolioCubit(_portfolioRepository);
+    await loadAppFonts();
+
     final builder = DeviceBuilder()
       ..overrideDevicesForAllScenarios(devices: [Device.iphone11])
       ..addScenario(widget: const HelloScreen());
